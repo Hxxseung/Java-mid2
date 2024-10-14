@@ -1,4 +1,4 @@
-package animal;
+package generic.animal;
 
 public class Cat extends Animal{
     public Cat(String name, int size) {

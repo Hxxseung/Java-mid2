@@ -1,4 +1,4 @@
-package ex2;
+package generic.ex2;
 
 public class Box<T> {
 
