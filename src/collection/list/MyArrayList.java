@@ -2,7 +2,7 @@ package collection.list;
 
 import java.util.Arrays;
 
-public class MyArrayList<E> {
+public class MyArrayList<E> implements MyList<E> {
 
     private static final int DEFAULT_CAPACITY = 5;
 
@@ -20,6 +20,12 @@ public class MyArrayList<E> {
     public int size(E e){
         return size;
     }
+
+    @Override
+    public int size() {
+        return 0;
+    }
+
     public void add(E e) {
         if (size == elementData.length) {
             grow();
