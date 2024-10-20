@@ -87,3 +87,8 @@ public class JavaListPerformanceTest {
         System.out.println("findValue: " + findValue + ", 반복: " + loop + ", 계산 시간: " + (endTime - startTime) + "ms");
     }
 }
+
+
+//실제로는 LinkedList보다 ArrayList가 평균적으로 훨씬 좋은 성능을 보여준다.
+//일반적으로 실무에서 ArrayList를 많이 사용한다. ( 고속 복사의 영향(최적화 등)의 영향)
+//데이터가 엄청 많을 경우에는 LinkedList를 사용할 때 앞에서 꺼내는 것에 대한 이점은 있지만, 일반적인 경우에는 크게 의미가 없다.
