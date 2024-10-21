@@ -9,7 +9,7 @@ public class HashStart5 {
 
     public static void main(String[] args) {
         //{1, 2, 5, 8, 14, 99, 9}
-        LinkedList<Integer>[] buckets = new LinkedList[CAPACITY];
+        LinkedList<Integer>[] buckets = new LinkedList[CAPACITY];   //충돌 할 확률이 적어서 이 예제에선 LinkedList를 사용했음.
         for(int i = 0; i < CAPACITY; i++) {
             buckets[i] = new LinkedList<>();
         }
@@ -43,7 +43,7 @@ public class HashStart5 {
             searchValue) {
         int hashIndex = hashIndex(searchValue);
         LinkedList<Integer> bucket = buckets[hashIndex]; // O(1)
-        return bucket.contains(searchValue); // O(n)
+        return bucket.contains(searchValue); // O(n) , 중복체크
     }
     static int hashIndex(int value) {
         return value % CAPACITY;
