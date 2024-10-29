@@ -27,6 +27,6 @@ public class Deck {
     }
 
     public Card drawCard(){
-        return cards.remove(0);
+        return cards.removeFirst(); //remove(0)과 동일
     }
 }

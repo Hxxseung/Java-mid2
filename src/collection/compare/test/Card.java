@@ -24,7 +24,7 @@ public class Card implements Comparable<Card> {
         if(this.rank != anotherCard.rank) {
             return Integer.compare(this.rank, anotherCard.rank);
         } else{
-            return this.suit.compareTo(anotherCard.suit);
+            return this.suit.compareTo(anotherCard.suit);   //Enum class(Suit)에 비교.
         }
     }
 
