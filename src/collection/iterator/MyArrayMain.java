@@ -8,9 +8,16 @@ public class MyArrayMain {
 
         Iterator<Integer> iterator = myArray.iterator();
         System.out.println("iterator 사용");
+
         while (iterator.hasNext()) {
             Integer value = iterator.next();
             System.out.println("value = " + value);
         }
+
+        System.out.println("for-each 사용");  //iterable, iterator이 구현 되어있어야 함.
+        for(int value : myArray){
+            System.out.println("value = " + value);
+        }
+
     }
 }
